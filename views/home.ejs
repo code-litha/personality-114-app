@@ -18,6 +18,8 @@
             <th>Address</th>
             <th>Cinta Pertama</th>
             <th>Personality</th>
+            <th>Email</th>
+            <th>Created At</th>
             <th>Action</th>
         </tr>
         <% for(let person of people){ %>
@@ -26,6 +28,8 @@
                 <td><%= person.address %></td>
                 <td><%= person.firstCrush %></td>
                 <td><%= person.Personality.name %></td>
+                <td><%= person.Accounts[0]?.email || '-' %></td>
+                <td><%= renderDate(person.createdAt) %></td>
                 <td><a href="/delete/<%= person.id %>">Delete</a></td>
             </tr>
         <% } %>

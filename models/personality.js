@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Personality',
+    tableName: 'Personalities'  // kalau nama tablenya bukan plural dari model namenya
   });
   return Personality;
 };

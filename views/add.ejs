@@ -12,6 +12,11 @@
         <a href="/add"><button>Add Member</button></a>
     </nav>
     <h1>Add New Member</h1>
+    <% if (errors.length) { %>
+        <% errors.forEach(err => { %>
+            <p style="color: red"><%= err %></p>
+        <% }) %>
+    <% } %>
     <form action="/add" method="post">
         Name : <input type="text" autocomplete="off" name="name"><br>
         Gender : <input type="radio" autocomplete="off" name="gender" value="Male"> Male <input type="radio" autocomplete="off" name="gender" value="Female"> Female <br>
