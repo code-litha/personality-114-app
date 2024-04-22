@@ -1,0 +1,16 @@
+Personalities
+- id 
+- name
+- description
+- createdAt
+- updatedAt
+
+People
+ - id
+ - name
+ - gender
+ - address
+ - firstCrush
+ - PersonalityId
+ - createdAt
+ - updatedAt
